@@ -9,7 +9,7 @@
 * [Ejercicio #1 Página web con elementos básicos (01-pagina-web)](https://github.com/AleUABCS/pweb/tree/main/01-pagina-web)
 * [Ejercicio #2 - Listas, Multimedia y tablas (02-listas-multimedia-tablas)](https://github.com/AleUABCS/pweb/tree/main/02-listas-multimedia-tablas)
 
-### Unidad 3: ...
-
+### Unidad 3: CSS
+* [Ejercicio #1 - Formato de texto, fuentes, fondos y border (04-formato-texto-fuentes-fondo-borde)](https://github.com/AleUABCS/pweb/tree/main/04-formato-texto-fuentes-fondo-borde)
 ### Repositorio 
 https://github.com/AleUABCS/pweb

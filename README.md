@@ -11,5 +11,6 @@
 
 ### Unidad 3: CSS
 * [Ejercicio #1 - Formato de texto, fuentes, fondos y border (04-formato-texto-fuentes-fondo-borde)](https://github.com/AleUABCS/pweb/tree/main/04-formato-texto-fuentes-fondo-borde)
+* [Ejercicio #2 - Tarjeta (05-tarjeta)](https://github.com/AleUABCS/pweb/tree/main/05-tarjeta)
 ### Repositorio 
 https://github.com/AleUABCS/pweb

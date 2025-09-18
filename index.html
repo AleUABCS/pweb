@@ -1,4 +1,4 @@
-
+    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +12,31 @@
             font-family: "ANDYB";
             src: url("fonts/ANDYB.TTF") format("truetype");
         }
+        
+        *{
+            background-color: #72564b;
+        }
+        
+        header{
+            
+            position: sticky;
+            top: 0;
+            left: 0;
+            font-size: 18px;
+            background-color: #3f2f29;
+            width: 100%;
+            height: 30px;
+
+        }
+
+        nav, nav a{
+             background-color: transparent;
+             vertical-align: -webkit-baseline-middle;
+        }
 
         body{
             font-family: ANDYB;
-            font-size: 22px;
+            font-size: 20px;
         }
 
         button{
@@ -23,9 +44,6 @@
             font-size: 18px;
         }
 
-        *{
-            background-color: #72564b;
-        }
 
         a{
             -webkit-text-fill-color: #4caf50;
@@ -91,18 +109,22 @@
     </style>
 
 </head>
-<header>
-    <h1 id="title">Clases en terraria</h1>
-
-    <nav> 
-        <a href="https://terraria.wiki.gg/es/">Página principal</a>
-        <a href="https://terraria.wiki.gg/es/wiki/Terraria_Wiki:Community_noticeboard">Comunidad</a>
-        <a href="https://terraria.wiki.gg/es/wiki/Ayuda:Editando">Ayuda</a>
-    </nav>
-</header>
 
 <body>
-   <div class="index">
+    <header>
+        
+        <nav> 
+            <a href="https://terraria.wiki.gg/es/">Página principal</a>
+            <a href="https://terraria.wiki.gg/es/wiki/Terraria_Wiki:Community_noticeboard">Comunidad</a>
+            <a href="https://terraria.wiki.gg/es/wiki/Ayuda:Editando">Ayuda</a>
+        </nav>
+        
+        
+    </header>
+    
+    <h1 id="title">Clases en terraria</h1>
+
+    <div class="index">
        <table border="1"> 
 
             <thead>

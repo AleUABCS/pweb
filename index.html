@@ -6,108 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-
-        @font-face {
-            font-family: "ANDYB";
-            src: url("fonts/ANDYB.TTF") format("truetype");
-        }
-        
-        *{
-            background-color: #72564b;
-        }
-        
-        header{
-            
-            position: sticky;
-            top: 0;
-            left: 0;
-            font-size: 18px;
-            background-color: #3f2f29;
-            width: 100%;
-            height: 30px;
-
-        }
-
-        nav, nav a{
-             background-color: transparent;
-             vertical-align: -webkit-baseline-middle;
-        }
-
-        body{
-            font-family: ANDYB;
-            font-size: 20px;
-        }
-
-        button{
-            font-family: ANDYB;
-            font-size: 18px;
-        }
-
-
-        a{
-            -webkit-text-fill-color: #4caf50;
-        }
-
-        .index a{
-            text-decoration: none;
-        }
-
-        #title{
-            text-align: center;
-            -webkit-text-fill-color: #1a301a;
-        }
-
-        .image{
-            border-width: 10px;
-            border-color: #1a301a;
-            border-style: solid;
-        }
-
-        .card{
-            display: flex;
-            flex-direction: column;
-            background-color: #64bf67;
-            border-radius: 10px;
-            overflow: hidden;
-            width: 300px;
-            border: 1px solid #1a301a;
-        }
-
-        .card h2{
-            margin-top: 10px;
-            margin-bottom: 0;
-        }
-        .card p{
-            margin: 10px;
-        }
-
-        .card img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .card *{
-            background-color: bisque;
-            text-align: center;
-        }
-
-        .card .footer button {
-            background-color: #64bf67;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            margin-top: 5px;
-            border: none;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-bottom: 5px;
-            padding-top: 5px;
-        }
-        
-
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -147,9 +46,11 @@
             </tbody>
         </table>
         <br>
-   </div>
-    
-    <img src="assets/clases.jpg" alt="Imagen de las clases finales del juego" title="Clases del endgame" class = image>
+    </div>
+
+    <div class="image-cont">
+       <img src="assets/clases.jpg" alt="Imagen de las clases finales del juego" title="Clases del endgame" class = image>
+    </div>
 
 
     <div>
@@ -251,6 +152,32 @@
             </video>
         </aside>
 
+        <form action="">
+            <h3>Dejanos tus comentiarios</h3>
+            <input type="text" class="form-input" placeholder="Ingresa tu nombre de usuario"> <br>
+            <textarea name="" class="form-textarea" placeholder="Danos alguna sugerencia"></textarea> <br>
+            <input type="text" class="form-input" placeholder="Qué navegador usas" list="browsers">
+            <datalist id="browsers">
+                <option value="Chorome"></option>
+                <option value="FireFox"></option>
+                <option value="Edge"></option>
+                <option value="Safari"></option>
+            </datalist> <br>
+            <select name="" class="form-input" id="">
+                <option value="" disabled selected>Motivo de comentario (seleccionar)</option>
+                <optgroup label="Reportes">
+                    <option value="reporte">Reporte</option>
+                    <option value="sugerencia">sugerencia</option>
+                </optgroup>
+                <optgroup label="Dudas">
+                    <option value="pregunta">Pregunta</option>
+                </optgroup>
+            </select> <br>
+            <button>Enviar</button>
+
+        </form>
+
+        <br>
         <footer>
             Publicado el 02 de noviembre del 2005
         </footer>

@@ -14,6 +14,7 @@
 * [Ejercicio #2 - Tarjeta (05-tarjeta)](https://github.com/AleUABCS/pweb/tree/main/05-tarjeta)
 * [Ejercicio #3 - Header sticky (06-header-stick)](https://github.com/AleUABCS/pweb/tree/main/06-header-sticky)
 * [Ejercicio #4 - Formulario (07-formulario)](https://github.com/AleUABCS/pweb/tree/main/07-formulario)
+* [Ejercicio #5 - Sitio con tarjetas (flex) (08-tarjetas)]()
 ### Repositorio
 https://github.com/AleUABCS/pweb
 

@@ -15,6 +15,8 @@
 * [Ejercicio #3 - Header sticky (06-header-stick)](https://github.com/AleUABCS/pweb/tree/main/06-header-sticky)
 * [Ejercicio #4 - Formulario (07-formulario)](https://github.com/AleUABCS/pweb/tree/main/07-formulario)
 * [Ejercicio #5 - Sitio con tarjetas (flex) (08-tarjetas)](https://github.com/AleUABCS/pweb/tree/main/08-tarjetas)
+* [Ejercicio #6 - Variables y funciones (09-variables-y-funciones)](https://github.com/AleUABCS/pweb/tree/main/09-variables-y-funciones)
+
 ### Repositorio
 https://github.com/AleUABCS/pweb
 

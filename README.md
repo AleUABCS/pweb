@@ -17,6 +17,8 @@
 * [Ejercicio #5 - Sitio con tarjetas (flex) (08-tarjetas)](https://github.com/AleUABCS/pweb/tree/main/08-tarjetas)
 * [Ejercicio #6 - Variables y funciones (09-variables-y-funciones)](https://github.com/AleUABCS/pweb/tree/main/09-variables-y-funciones)
 * [Ejercicio #7 - CSS Grid (10-css-grid)](https://github.com/AleUABCS/pweb/tree/main/10-css-grid)
+* [Ejercicio #8 - Sitio responsivo (11-sitio-responsivo)](https://github.com/AleUABCS/pweb/tree/main/11-sitio-responsivo)
+
 
 ### Repositorio
 https://github.com/AleUABCS/pweb

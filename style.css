@@ -33,6 +33,25 @@
 
         }
 
+        
+        img{
+            width: 100%;;
+            display: block;
+            height: auto;
+        }
+
+        video{
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+        
+        .image-cont{
+            width: 600px;
+            margin: 20px auto;
+
+        }
+        
         nav{
              background-color: transparent;
              flex: 1;
@@ -87,12 +106,6 @@
         #title{
             text-align: center;
             -webkit-text-fill-color: #5baa5b;
-        }
-
-        .image{
-            border-width: 10px;
-            border-color: #1d841d;
-            border-style: solid;
         }
 
         .card{
@@ -253,43 +266,65 @@
         .grid-cont div {
             border: 5px solid var(--grid-border);
         }
-
         .grid-cont div p{
             text-align: center;
         }
 
-        .melee-grid-weapons{
-            grid-row: 1/2;
-        }
+        .melee-grid-weapons {grid-row: 1/2;}
+        .melee-grid-weapons p {background-color: #ff3838; color: #ffffff;}
+        .melee-grid-armor {grid-row: 2/5;}
 
-        .melee-grid-armor{
-            grid-row: 2/5;
-        }
+        .range-grid-weapons {grid-row: 1/2;}
+        .range-grid-weapons p {background-color: #7a9218; color: #ffffff;}        
+        .range-grid-armor {grid-row: 2/5;}
 
-        .range-grid-weapons{
-            grid-row: 1/2;
-        }
+        .mage-grid-weapons {grid-row: 1/2;}
+        .mage-grid-weapons p {background-color: #8b51ff; color: #ffffff;}
+        .mage-grid-armor {grid-row: 2/5;}
 
-        .range-grid-armor{
-            grid-row: 2/5;
-        }
+        .summoner-grid-weapons {grid-row: 1/2;}
+        .summoner-grid-weapons p {background-color: #e0d256; color: #1e1c1c;}
+        .summoner-grid-armor {grid-row: 2/3;}
+        .summoner-grid-accesories {grid-row: 3/5;}
 
-        .mage-grid-weapons{
-            grid-row: 1/2;
-        }
+        @media (max-width: 600px) {
+            .grid-cont{
+                margin: 0 auto;
+                width: max-content;
+                height: max-content;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                display: grid;
+            }
 
-        .mage-grid-armor{
-            grid-row: 2/5;
-        }
+            .grid-cont div {
+                grid-row: auto;
+                grid-column: auto;
+            }
 
-        .summoner-grid-weapons{
-            grid-row: 1/2;
-        }
+            .grid-cont li {
+                list-style-type: none;
+            }
 
-        .summoner-grid-weapons{
-            grid-row: 2/3;
-        }
+            body {
+                margin: 4%;
+            }
 
-        .summoner-grid-accesories{
-            grid-row: 3/5;
+            .image-cont{
+                width: 300px;
+                display: block;
+            }
+
+            form{
+                width: 330px;
+            }
+
+            .form-input, .form-textarea{
+                font-size: 14px;
+            }
+
+            form button{
+                font-size: 20px;
+            }
+
         }

@@ -8,7 +8,7 @@
             --link-color: #4caf50;
             --font-med: 20px;
             --header-bg-color: #3f2f29;
-            --bg-color: #72564b;
+            --bg-color: #5a433a;
             --shadow-color: #251c18; 
             --button-bg: #64bf67;
             --button-hover: #1d7b3c;
@@ -19,7 +19,6 @@
         }
         
         header{
-            
             position: sticky;
             top: 0;
             left: 0;
@@ -29,8 +28,7 @@
             height: 50px;
             align-items: center;
             display: flex;
-            padding-left: 20px;
-
+            padding-left: 10px;
         }
 
         
@@ -51,7 +49,7 @@
             margin: 20px auto;
 
         }
-        
+
         nav{
              background-color: transparent;
              flex: 1;
@@ -66,10 +64,22 @@
         body{
             font-family: ANDYB;
             font-size: var(--font-med);
-            background-color: var(--bg-color);
             margin-left: 2%;
-            margin-left: 2%;
+            margin-right: 2%;
             text-align: justify;
+            background-image: url("assets/terraria_background.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .div-main{
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: var(--bg-color);
+        }
+
+        .clases{
+            background-color: transparent;
         }
 
         button{
@@ -100,12 +110,14 @@
             border: 3px solid #033112;
             width: fit-content;
             padding-right: 20px;
+            background-color: var(--header-bg-color)
         }
 
 
         #title{
-            text-align: center;
             -webkit-text-fill-color: #5baa5b;
+            font-size: 50px;
+            padding-top: 30px;
         }
 
         .card{
@@ -304,10 +316,6 @@
 
             .grid-cont li {
                 list-style-type: none;
-            }
-
-            body {
-                margin: 4%;
             }
 
             .image-cont{

@@ -18,6 +18,7 @@
 * [Ejercicio #6 - Variables y funciones (09-variables-y-funciones)](https://github.com/AleUABCS/pweb/tree/main/09-variables-y-funciones)
 * [Ejercicio #7 - CSS Grid (10-css-grid)](https://github.com/AleUABCS/pweb/tree/main/10-css-grid)
 * [Ejercicio #8 - Sitio responsivo (11-sitio-responsivo)](https://github.com/AleUABCS/pweb/tree/main/11-sitio-responsivo)
+* [Ejercicio #9 (Examen) - (12-examen)](https://github.com/AleUABCS/pweb/tree/main/12-examen)
 
 
 ### Repositorio

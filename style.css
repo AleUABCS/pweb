@@ -395,9 +395,15 @@
             
             .card-footer h2{
                 font-size: 16px;
+                margin-bottom: 0;
             }
 
             .card-footer p{
+                font-size: 12px;
+                margin-bottom: 0;
+            }
+
+            .card-button{
                 font-size: 12px;
             }
 
@@ -406,17 +412,24 @@
                 height: 200px;
             }
 
+            .content{
+                max-height: 100px;
+
+            }
+
             #bosses-table ul{
                 font-size: 12px;
             }
 
             .icon{
-                height: 10px;
+                max-width: 20px;
             }
 
-            .img-fluid{
-                width: 10px;
+            .boss-table-boss-image{
+                max-width: 100px;
             }
+
+       
         }
 
         .title-image{
@@ -435,16 +448,18 @@
             max-width:700px;
             object-fit: fill;
             z-index: 0;
+            margin: 0 auto;
         }
 
         #carouselExampleIndicators{
             max-width:  700px;
             margin: 0 auto;
+            margin-bottom: 50px;
         }
 
         #bosses-table{
-            
             max-width: 500px;
+            margin-bottom: 50px;
         }
         
         #bosses-table ul {

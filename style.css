@@ -343,6 +343,10 @@
                 font-size: 16px;
             }
 
+            #title{
+                font-size: 40px
+            }
+
             .div-main{
                 padding-left: 10%;
                 padding-right: 10%;

@@ -5,10 +5,10 @@
         }
         
         *{
-            --link-color: #4caf50;
-            --font-med: 20px;
-            --header-bg-color: #3f2f29;
-            --bg-color: #5a433a;
+            --link-color: #4ac94e;
+            --font-med: 24px;
+            --header-bg-color: #54413a;
+            --bg-color: #795d52e7;
             --shadow-color: #251c18; 
             --button-bg: #64bf67;
             --button-hover: #1d7b3c;
@@ -17,20 +17,35 @@
             --grid-border: #283460;
             --grid-bg: #1e2449;
         }
+
         
         header{
             position: sticky;
             top: 0;
             left: 0;
             font-size: var(--font-med);
-            background-color: var(--header-bg-color);
             width: 100%;
-            height: 50px;
             align-items: center;
-            display: flex;
-            padding-left: 10px;
+            display: inline-block;
+            margin-top: 20px;
         }
 
+        header nav {
+            padding-left: 10px;
+            background: linear-gradient( #986b4c, #795d52);
+            height: 40px;
+            align-content: center;
+            ;
+        }
+        
+        #grass-image{
+            height: 20px;
+            width: 100%;
+            background-image: url(assets/grass-header.png);
+            background-color: transparent;
+            background-size: contain;
+            padding-left: 0;
+        }
         
         img{
             width: 100%;;
@@ -64,17 +79,18 @@
         body{
             font-family: ANDYB;
             font-size: var(--font-med);
-            margin-left: 2%;
-            margin-right: 2%;
+            margin-left: 5%;
+            margin-right: 5%;
             text-align: justify;
-            background-image: url("assets/terraria_background.jpg");
+            background-image: url("assets/terraria_background.png");
             background-attachment: fixed;
             background-size: cover;
         }
 
         .div-main{
-            padding-left: 20px;
-            padding-right: 20px;
+            left: 0;
+            padding-left: 50px;
+            padding-right: 50px;
             background-color: var(--bg-color);
         }
 
@@ -104,10 +120,12 @@
 
         .index p{
             text-align: center;
-            font-size: var(--font-med);
+            font-size: 28px;
+            color: #5baa5b;
         }
         .index{
-            border: 3px solid #033112;
+            max-width: 200px;
+            border: 1px solid #808080;
             width: fit-content;
             padding-right: 20px;
             background-color: var(--header-bg-color)
@@ -118,6 +136,14 @@
             -webkit-text-fill-color: #5baa5b;
             font-size: 50px;
             padding-top: 30px;
+            margin-bottom: 0;
+        }
+        
+        hr{
+            border: none;
+            height: 1px;
+            background-color: gray;
+            margin-bottom: 50px;
         }
 
         .card{
@@ -171,6 +197,15 @@
             padding-top: 5px;
         }
 
+        .card-button a{
+            color: black;
+            text-decoration: none;
+        }
+
+        .card-button:active card-button:visited {
+            color: black;
+        }
+
         button:hover{
             background-color: var(--button-hover);
             transition: all 0.2s;
@@ -178,6 +213,7 @@
 
         form{
             margin: 0 auto;
+            margin-top: 100px;
             text-align: center;
             background-color: bisque;
             overflow: hidden;
@@ -266,10 +302,12 @@
 
         .grid-cont{
             margin: 0 auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
             background-color: var(--grid-bg);
             color: var(--link-color);
             width: 800px;
-            height: 550px;
+            height: 600px;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(4, 1fr);
             display: grid;
@@ -277,6 +315,7 @@
 
         .grid-cont div {
             border: 5px solid var(--grid-border);
+            padding-right: 5px;
         }
         .grid-cont div p{
             text-align: center;
@@ -302,7 +341,7 @@
         @media (max-width: 600px) {
             .grid-cont{
                 margin: 0 auto;
-                width: max-content;
+                width: auto;
                 height: max-content;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto;
@@ -324,7 +363,7 @@
             }
 
             form{
-                width: 330px;
+                width: 270px;
             }
 
             .form-input, .form-textarea{
@@ -335,4 +374,50 @@
                 font-size: 20px;
             }
 
+            blockquote {
+                 margin-left: 0;
+                 margin-right: 0;
+            }
+            
+
+        }
+
+        .title-image{
+            margin-left: 10px;
+            width: 40px;
+            height: fit-content;
+            align-self: end;
+            margin-bottom: 10px;
+        }
+
+        #title-cont{
+            display: flex;
+        }
+
+        .carousel-item img{
+            max-width:700px;
+            object-fit: fill;
+        }
+
+        #carouselExampleIndicators{
+            max-width:  700px;
+            margin: 0 auto;
+        }
+
+        #bosses-table{
+            
+            max-width: 500px;
+        }
+        
+        #bosses-table ul {
+            list-style-type: none;
+        }
+
+        .icon{
+            display: inline-flex;
+            width: 35px;
+        }
+        
+        #accordionExample{
+            width: 500px;
         }

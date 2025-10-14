@@ -20,6 +20,7 @@
 
         
         header{
+            z-index: 99;
             position: sticky;
             top: 0;
             left: 0;
@@ -35,7 +36,6 @@
             background: linear-gradient( #986b4c, #795d52);
             height: 40px;
             align-content: center;
-            ;
         }
         
         #grass-image{
@@ -339,6 +339,19 @@
         .summoner-grid-accesories {grid-row: 3/5;}
 
         @media (max-width: 600px) {
+            body{
+                font-size: 16px;
+            }
+
+            .div-main{
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+            header nav{
+                font-size: 16px;
+            }
+
             .grid-cont{
                 margin: 0 auto;
                 width: auto;
@@ -351,6 +364,7 @@
             .grid-cont div {
                 grid-row: auto;
                 grid-column: auto;
+                font-size: 16px;
             }
 
             .grid-cont li {
@@ -379,7 +393,30 @@
                  margin-right: 0;
             }
             
+            .card-footer h2{
+                font-size: 16px;
+            }
 
+            .card-footer p{
+                font-size: 12px;
+            }
+
+            .card{
+                width: 120px;
+                height: 200px;
+            }
+
+            #bosses-table ul{
+                font-size: 12px;
+            }
+
+            .icon{
+                height: 10px;
+            }
+
+            .img-fluid{
+                width: 10px;
+            }
         }
 
         .title-image{
@@ -397,6 +434,7 @@
         .carousel-item img{
             max-width:700px;
             object-fit: fill;
+            z-index: 0;
         }
 
         #carouselExampleIndicators{
@@ -419,5 +457,5 @@
         }
         
         #accordionExample{
-            width: 500px;
+            max-width: 500px;
         }

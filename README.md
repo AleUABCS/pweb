@@ -27,5 +27,5 @@
 https://github.com/AleUABCS/pweb
 
 ### Página
-Index https://aleuabcs.github.io/pweb/
-Calculadora https://aleuabcs.github.io/pweb/calc.html
+* Index https://aleuabcs.github.io/pweb/
+* Calculadora https://aleuabcs.github.io/pweb/calc.html

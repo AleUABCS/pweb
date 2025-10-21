@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        Calculadora
+    <script>
+        
+        let n1 = prompt("Primer número: ");
+        let n2 = prompt("Segundo número: ");
+        let op = prompt("Operación: 'suma' | 'resta' | 'multiplicacion' | 'division'");
+        let total;
+
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+
+        if(op == "suma")
+            total = n1 + n2;
+        else if(op == "resta")
+            total = n1 - n2;
+        else if(op == "multiplicacion")
+            total = n1 * n2;
+        else if (op == "division")
+            if (n2 == 0)
+                alert("Error: división entre cero (0)");
+            else
+                total = n1 / n2;
+        else
+            alert ("Operación inválida");
+        if (total != null)
+            alert ("Resulatado: " + total);
+
+        console.log("Operación: " + op + ", Resultado: " + total);
+    </script>
+
+</body>
+</html>

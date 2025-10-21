@@ -20,6 +20,8 @@
 * [Ejercicio #8 - Sitio responsivo (11-sitio-responsivo)](https://github.com/AleUABCS/pweb/tree/main/11-sitio-responsivo)
 * [Ejercicio #9 (Examen) - (12-examen)](https://github.com/AleUABCS/pweb/tree/main/12-examen)
 
+### Unidadd 4: JavaScript
+* [Ejercicio #1 - Calculadora (13-calculadora)](https://github.com/AleUABCS/pweb/tree/main/13-calculadora)
 
 ### Repositorio
 https://github.com/AleUABCS/pweb

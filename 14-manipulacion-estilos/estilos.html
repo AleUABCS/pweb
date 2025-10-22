@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .card-title{
+            margin-bottom: 25px;
+        }
+        .card {
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 1px solid gray;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            width: 500px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .card button {
+            min-width: 100px;
+            height: 40px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin: 2px;
+            color: white;
+        }
+
+        .red-button {
+            background-color: red;
+        }
+        
+        .green-button {
+            background-color: green;
+        }
+
+        .blue-button {
+            background-color: blue;
+        }
+
+        .reset-button {
+            background-color: gray;
+        }
+
+        .red-background {
+            background-color: red;
+        }
+
+        .green-background {
+            background-color: green;
+        }
+
+        .blue-background {
+            background-color: blue;
+        }
+
+        .reset-background {
+            background-color: transparent;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="div" class="card">
+        <h2 class="card-title">Cambiar fondo</h2>
+        <button id="red-card-button" class="red-button">Rojo</button>
+        <button id="green-card-button" class="green-button">Verde</button>
+        <button id="blue-card-button" class="blue-button">Azul</button>
+        <button id="reset-card-button" class="reset-button">Reestablecer</button>
+    </div>
+
+    <script>
+        const card = document.getElementById("div");
+        const bg = document.body;
+        document.getElementById("red-card-button").addEventListener("click", function () {
+            card.className = "card";
+            bg.className = "red-background";
+            card.classList.add("red-background");
+            console.log("botón rojo");
+        });
+        document.getElementById("green-card-button").addEventListener("click", function () {
+            card.className = "card";
+            bg.className = "green-background";
+            card.classList.add("green-background");
+            console.log("boton velde");
+        })
+        document.getElementById("blue-card-button").addEventListener("click", function () {
+            card.className = "card";
+            bg.className = "blue-background";
+            card.classList.add("blue-background");
+            console.log("boton azul");
+        })
+        document.getElementById("reset-card-button").addEventListener("click", function () {
+            card.className = "card";
+            bg.className = "reset-background"
+            console.log("boton-reestablecer");
+        })
+
+    </script>
+
+</body>
+</html>

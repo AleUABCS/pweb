@@ -23,6 +23,7 @@
 ### Unidadd 4: JavaScript
 * [Ejercicio #1 - Calculadora (13-calculadora)](https://github.com/AleUABCS/pweb/tree/main/13-calculadora)
 * [Ejercicio #2 - Manipulación de estilos (14-manipulacion-estilos)](https://github.com/AleUABCS/pweb/tree/main/14-manipulacion-estilos)
+* [Ejercicio #3 - Calculadora visual (15-calculadora-visual)](https://github.com/AleUABCS/pweb/tree/main/15-calculadora-visual)
 
 ### Repositorio
 https://github.com/AleUABCS/pweb

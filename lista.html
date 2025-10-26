@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            --font-med: 20px;
+        }
+
+        h1{
+            justify-self: center;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+        }
+
+        .checked {
+            text-decoration: line-through;
+            text-decoration-color: black;
+            color: gray;
+        }
+
+        #list{
+            padding: 0;
+        }
+        
+        #list li {
+            list-style-type: none;
+            font-size: var(--font-med);
+            border-bottom: 1px solid lightgray;
+
+            width: 600px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        #top-bar{
+            width: 600px;
+            display: flex;
+            margin: 0 auto;
+        }
+        
+        #input-task{
+            font-size: var(--font-med);
+            border: 2px solid lightgray;
+            border-radius: 5px;
+
+            padding-left: 10px;
+
+            width: 80%;
+            height: 30px;
+        }
+
+        #list-cont {
+            margin: 0 auto;
+            width: 600px;
+            display: flex;
+        }
+
+        button {
+            font-size: var(--font-med);
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin-left: 10px;
+            justify-items: center;
+
+            width: 20%;
+            height: 35px;
+        }
+
+        .deleteButton {
+            background-color: lightcoral;
+            font-size: 18px;
+            width: 80px
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Lista de tareas</h1>
+    <div id="top-bar">
+        <input type="text" id="input-task" placeholder="Nueva tarea">
+        <button id="new-task" onclick=addTask()> Agregar </button>
+    </div>
+    <div id="list-cont">
+        <ul id="list">
+        </ul>
+    </div>
+
+    <script>
+        //Lista
+        let list = document.getElementById("list");
+        //Lista de las tareas para almacenarlas en local storage
+        let tasks = [];
+
+        //Cargar tareas
+        if (localStorage)
+            tasks = JSON.parse(localStorage.getItem(tasks));
+
+        
+        //Función del botón "Agregar"
+        function addTask() {
+            //Texto del input del nombre de la nueva tarea
+            let newTaskText = document.getElementById("input-task").value;
+            if (newTaskText === "") return
+
+            //Crear el list item
+            let newTask = document.createElement("li");
+
+            //Crear etiqueta que contiene el texto del list item
+            let taskName = document.createElement("label");
+            taskName.textContent = newTaskText;
+
+            //Crear checkbox del list item
+            let check = document.createElement("input")
+            check.type = "checkbox";
+            //Añadir acción de tachar elemento al checkbox
+            check.addEventListener('change', function() {
+                if (this.checked) {
+                    taskName.className = "checked";
+                    console.log("Checked");
+                }
+                else{
+                    taskName.className = "";
+                    console.log("Not checked");
+                }
+            }); 
+            
+            //Crear el botón "Eliminar" del list item
+            let deleteBtn = document.createElement("button");
+            deleteBtn.textContent = "Eliminar";
+            deleteBtn.className = "deleteButton";
+            deleteBtn.onclick = function(){
+                newTask.remove();
+            };
+
+            //Añadir los elementos al list item en orden
+            newTask.appendChild(check);
+            newTask.appendChild(taskName);
+            newTask.appendChild(deleteBtn);
+            
+            //Eliminar texto del input "Nueva tarea" al presionar el botón
+            document.getElementById("input-task").value = "";
+
+            //Añadir el list item a la lista
+            list.appendChild(newTask);
+
+            //Añadir el elemento al array de listas
+            tasks.push({
+                id: Date.now(),
+                text: newTaskText,
+                done: false
+            })
+
+            console.log(tasks);
+
+            localStorage.setItem("tasks", JSON.stringify(tasks));
+
+            console.log(JSON.parse(localStorage.getItem(tasks)));
+        }
+    </script>
+</body>
+</html>

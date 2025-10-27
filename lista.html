@@ -91,7 +91,7 @@
     <h1>Lista de tareas</h1>
     <div id="top-bar">
         <input type="text" id="input-task" placeholder="Nueva tarea">
-        <button id="new-task" onclick=addTask()> Agregar </button>
+        <button id="new-task" onclick=addTask(true)> Agregar </button>
     </div>
     <div id="list-cont">
         <ul id="list">
@@ -103,16 +103,35 @@
         let list = document.getElementById("list");
         //Lista de las tareas para almacenarlas en local storage
         let tasks = [];
-
+        let isChecked = false;
+        let newTaskText;
+        let deleteBtn;
         //Cargar tareas
-        if (localStorage)
-            tasks = JSON.parse(localStorage.getItem(tasks));
-
+        if (localStorage.length > 0){
+            tasks = JSON.parse(localStorage.getItem("tasks"));
+            let index = 0;
+            tasks.forEach(element => {
+                newTaskText = element.text;
+                deleteBtn = document.createElement("button");
+                deleteBtn.onclick = function () {
+                    tasks.splice(index, 1);
+                };
+                addTask(false);
+            });
+            console.log("Hay storage guardado: ")
+            console.log(tasks);
+        }
         
         //Función del botón "Agregar"
-        function addTask() {
+        function addTask(setTasks) {
             //Texto del input del nombre de la nueva tarea
-            let newTaskText = document.getElementById("input-task").value;
+
+            if (setTasks)
+                isChecked = false;
+
+            if (setTasks)
+                newTaskText = document.getElementById("input-task").value;
+            
             if (newTaskText === "") return
 
             //Crear el list item
@@ -125,8 +144,13 @@
             //Crear checkbox del list item
             let check = document.createElement("input")
             check.type = "checkbox";
+
+            if (!setTasks) 
+                if (isChecked)
+                    check.checked = true
+
             //Añadir acción de tachar elemento al checkbox
-            check.addEventListener('change', function() {
+            check.addEventListener('change', function () {
                 if (this.checked) {
                     taskName.className = "checked";
                     console.log("Checked");
@@ -138,12 +162,9 @@
             }); 
             
             //Crear el botón "Eliminar" del list item
-            let deleteBtn = document.createElement("button");
+            deleteBtn = document.createElement("button");
             deleteBtn.textContent = "Eliminar";
             deleteBtn.className = "deleteButton";
-            deleteBtn.onclick = function(){
-                newTask.remove();
-            };
 
             //Añadir los elementos al list item en orden
             newTask.appendChild(check);
@@ -157,17 +178,37 @@
             list.appendChild(newTask);
 
             //Añadir el elemento al array de listas
-            tasks.push({
-                id: Date.now(),
-                text: newTaskText,
-                done: false
-            })
+            let taskId;
+            if (tasks === null)
+                tasks = [];
 
-            console.log(tasks);
+            //Si se van a guardar las tareas en el local storage
+            if (setTasks){
+                taskId = Date.now();
+                tasks.push({
+                    id: taskId,
+                    text: newTaskText,
+                    done: isChecked
+                });
+                deleteBtn.onclick = function(){
+                    console.log("botoneliminar");
+                    newTask.remove();
+                    let index = 0;
+                    tasks.forEach(element => {
+                        if (element.id = taskId){
+                            console.log("coincidencia: " + element.id +"|" + taskId);
+                            tasks.splice(index, 1);
+                            return;
+                        }
+                        index++;
+                        });
+                    localStorage.setItem("tasks", JSON.stringify(tasks));
+                }
+            }
 
+            //Guardar el array de tareas
             localStorage.setItem("tasks", JSON.stringify(tasks));
 
-            console.log(JSON.parse(localStorage.getItem(tasks)));
         }
     </script>
 </body>

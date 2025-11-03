@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            --font-med: 20px;
+        }
+
+        h1{
+            justify-self: center;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: center;
+        }
+
+        .checked {
+            text-decoration: line-through;
+            text-decoration-color: black;
+            color: gray;
+        }
+
+        #list{
+            padding: 0;
+        }
+        
+        #list li {
+            list-style-type: none;
+            font-size: var(--font-med);
+            border-bottom: 1px solid lightgray;
+
+            width: 600px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        #top-bar{
+            width: 600px;
+            display: flex;
+            margin: 0 auto;
+        }
+        
+        #input-task{
+            font-size: var(--font-med);
+            border: 2px solid lightgray;
+            border-radius: 5px;
+
+            padding-left: 10px;
+
+            width: 80%;
+            height: 30px;
+        }
+
+        #list-cont {
+            margin: 0 auto;
+            width: 600px;
+            display: flex;
+        }
+
+        button {
+            font-size: var(--font-med);
+            background-color: white;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin-left: 10px;
+            justify-items: center;
+
+            width: 20%;
+            height: 35px;
+        }
+
+        .removeButton {
+            background-color: lightcoral;
+            font-size: 14px;
+            width: 80px
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Lista de tareas</h1>
+    <div id="top-bar">
+        <input type="text" id="input-task" placeholder="Nueva tarea">
+        <button id="new-task-button"> Agregar </button>
+    </div>
+    <div id="list-cont">
+        <ul id="list">
+        </ul>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

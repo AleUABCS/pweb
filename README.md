@@ -25,7 +25,7 @@
 * [Ejercicio #2 - Manipulación de estilos (14-manipulacion-estilos)](https://github.com/AleUABCS/pweb/tree/main/14-manipulacion-estilos)
 * [Ejercicio #3 - Calculadora visual (15-calculadora-visual)](https://github.com/AleUABCS/pweb/tree/main/15-calculadora-visual)
 * [Ejercicio #4 - Lista de tareas (16-lista-tareas)](https://github.com/AleUABCS/pweb/tree/main/16-lista-tareas)
-* [Ejercicio #6 - Tarjeta con datos base de un gato (18-api](https://github.com/AleUABCS/pweb/tree/main/18-api)
+* [Ejercicio #6 - Tarjeta con datos base de un gato (18-api)](https://github.com/AleUABCS/pweb/tree/main/18-api)
 
 ### Repositorio
 https://github.com/AleUABCS/pweb
